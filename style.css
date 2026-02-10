@@ -1,78 +1,108 @@
 body {
-    background: rgb(125, 198, 205);
-    color: rgb(45, 45, 45);
-    padding: 10px;
-    font-family: Arial, sans-serif;
+  /* Fallback solid color (25% darker) */
+  background-color: #bfa7a7; /* darker pale red fallback */
+  /* Soft swirl made from layered gradients (pale red + pale blue-green) darkened 25% */
+  background-image:
+    radial-gradient(
+      circle at 30% 20%,
+      rgba(191, 166, 166, 0.85) 0%,
+      rgba(191, 166, 166, 0) 40%
+    ),
+    radial-gradient(
+      circle at 70% 80%,
+      rgba(163, 191, 184, 0.85) 0%,
+      rgba(163, 191, 184, 0) 45%
+    ),
+    conic-gradient(
+      from 120deg at 50% 50%,
+      rgba(191, 158, 158, 0.9) 0deg 40deg,
+      rgba(158, 191, 184, 0.9) 40deg 80deg,
+      rgba(191, 158, 158, 0.9) 80deg 120deg,
+      rgba(158, 191, 184, 0.9) 120deg 160deg,
+      rgba(191, 158, 158, 0.9) 160deg 200deg,
+      rgba(158, 191, 184, 0.9) 200deg 240deg,
+      rgba(191, 158, 158, 0.9) 240deg 280deg,
+      rgba(158, 191, 184, 0.9) 280deg 320deg,
+      rgba(191, 158, 158, 0.9) 320deg 360deg
+    );
+  background-blend-mode: overlay, overlay, normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(45, 45, 45);
+  padding: 10px;
+  font-family: Arial, sans-serif;
 }
 
 #all-contents {
-    max-width: 800px;
-    margin: auto;
+  max-width: 800px;
+  margin: auto;
 }
 
 /* navigation menu */
 nav {
-    background: rgb(239, 80, 41);
-    margin: 0 auto;
-    display: flex;
-    padding: 10px;
+  background: rgb(239, 80, 41);
+  margin: 0 auto;
+  display: flex;
+  padding: 10px;
 }
 
 h1 {
-    display: flex;
-    align-items: center;
-    color: white;
-    flex: 1;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex: 1;
+  margin: 0;
 }
 
 #nav-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .nav-li {
-    display: inline-block;
-    padding: 0 10px;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* main container area beneath menu */
 main {
-    background: rgb(245, 238, 219);
-    display: flex;
-    margin-top: 20px;
+  background: rgb(245, 238, 219);
+  display: flex;
+  margin-top: 20px;
 }
 
 .sidebar {
-    margin-right: 25px;
-    padding: 10px;
+  margin-right: 25px;
+  padding: 10px;
 }
 
 .sidebar-img {
-    width: 200px;
+  width: 200px;
 }
 
 .content {
-    flex: 1;
-    padding: 15px;
+  flex: 1;
+  padding: 15px;
 }
 
 /* interests section styles */
 #interests {
-    border: 4px silver ridge;
-    padding: 8px;
-    margin-top: 20px;
+  border: 4px silver ridge;
+  padding: 8px;
+  margin-top: 20px;
 }
 
-h2, h3 {
-    margin: 0px;
+h2,
+h3 {
+  margin: 0px;
 }
 /* Portfolio styles */
 .content h1 {
