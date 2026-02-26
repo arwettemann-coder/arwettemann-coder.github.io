@@ -34,6 +34,8 @@ $(function () {
     createPlatform(500, 0, 20, 290)
     createPlatform(1350, 400, 50, 50, "purple")
     createPlatform(1200, 720, 40, 40, "light orange")
+    createPlatform(200, 60, 30, .5, "pale red")
+    createPlatform(375, 420, 60, 195, "light green")
 
 
 
